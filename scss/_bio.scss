@@ -1,0 +1,43 @@
+.bio {
+  padding: 2rem;
+  width: 100%;
+
+  height: max-content;
+
+  &__header {
+    @include header_style;
+  }
+
+  &__title {
+    @include header-title_style;
+  }
+
+  &__sub-title {
+    text-align: left;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+
+  &__info {
+    padding: 2rem;
+    line-height: 1.6;
+    font-size: 1.8rem;
+    &::first-letter {
+      margin-left: 2rem;
+    }
+  }
+
+  &__languages {
+    list-style: none;
+    padding: 0 2rem;
+    li {
+      line-height: 1.6;
+      font-size: 1.8rem;
+
+      &::before {
+        content: '-';
+        padding-right: 1rem;
+      }
+    }
+  }
+}

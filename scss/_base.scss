@@ -1,0 +1,43 @@
+$color-primary: rgb(180, 135, 221);
+
+@mixin header_style {
+  background-color: $color-primary;
+  transform: skewX(-15deg);
+  text-align: center;
+}
+
+@mixin header-title_style {
+  color: #ffffff;
+  transform: skewX(15deg);
+  display: inline-block;
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-shadow: 0.5rem 0.5rem 1.5rem #fff;
+  transition: 0.2s;
+  &:hover {
+    scale: 1.1;
+    transform: translateY(2px);
+    transform: skewX(15deg);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; //1rem = 10px , 10px/16px = 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}

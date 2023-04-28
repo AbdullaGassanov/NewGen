@@ -1,0 +1,56 @@
+@import "base";
+@import "aside";
+@import "main-content";
+@import "header";
+@import "navbar";
+@import "bio";
+@import "portfolio";
+@import "contact";
+
+@media (max-width: 800px) {
+	body {
+		grid-template-columns: 1fr;
+	}
+
+	.aside {
+		height: 100vh;
+	}
+
+	.aside__img {
+		width: 55%;
+		padding: 1rem;
+		border-radius: 50%;
+		transition: 0.2s;
+		&:hover {
+			scale: 1.1;
+		}
+	}
+
+	.navbar__item {
+		transition: 0.3s;
+
+		&:hover {
+			transform: translateY(-0.3rem);
+		}
+	}
+
+	.navbar__content {
+		text-align: center;
+	}
+
+	.portfolio__header,
+	.contact__header,
+	.bio__header {
+		transform: skewX(0deg);
+	}
+
+	.portfolio__title,
+	.contact__title,
+	.bio__title {
+		transform: skewX(0deg);
+	}
+
+	.contact__footer {
+		grid-template-columns: repeat(3, 20%);
+	}
+}

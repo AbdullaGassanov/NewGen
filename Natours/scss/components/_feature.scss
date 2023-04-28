@@ -1,0 +1,51 @@
+/* .feature {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.8) rgba($color-primary-light, 0.4)
+    ),
+    url("../Img/nat-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+
+  &__item {
+    max-width: 27rem;
+    background-color: rgba($color-grey-light-1, 0.7);
+    border-radius: 0.4rem;
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(-1rem) scale(1.05);
+    }
+  }
+  &__item-img {
+    padding: 1rem 0;
+  }
+
+  &__item-title {
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__item-paragraph {
+    padding: 0 3.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+  }
+  &__item-icon {
+    font-size: 7rem;
+    color: $color-primary-dark;
+
+    padding: 2rem 0;
+    display: inline-block;
+  }
+}
+ */

@@ -1,0 +1,31 @@
+.navbar {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
+
+	&__content {
+		text-align: left;
+		align-self: center;
+	}
+
+	&__item {
+		transition: 0.3s;
+		margin-bottom: 0.5rem;
+
+		&:hover {
+			transform: translateX(1.5rem);
+			background-color: rgb(203, 166, 236);
+			padding: 0.1rem;
+			border-radius: 2px;
+			color: #fff;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: rgb(1, 1, 109);
+		font-size: calc(10vh * 0.15);
+		padding: 0 1rem;
+	}
+}

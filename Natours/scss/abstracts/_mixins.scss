@@ -1,0 +1,78 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin about-img {
+  width: 30rem;
+  transition: 0.4s;
+  padding: 1em;
+  > img {
+    box-shadow: 0 2rem 2rem rgba(rgb(87, 78, 78), 0.6);
+    max-width: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.5);
+    border: 1.1rem solid $color-primary;
+    border-radius: 2rem;
+    cursor: pointer;
+    z-index: 8;
+    box-shadow: 0.5rem 1rem 2rem rgba(rgb(87, 78, 78), 0.6);
+  }
+}
+
+// MEDIA QUERY MANAGER
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900px - 1200px  Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + : big Desktop
+
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em -16px
+*/
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == phone) {
+    @media (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tab-port) {
+    @media (max-width: 56.25em) {
+      //900px
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tab-land) {
+    @media (max-width: 75em) {
+      //1200px
+      @content;
+    }
+  }
+
+  @if ($breakpoint == big-desktop) {
+    @media (min-width: 112.5em) {
+      //1800px
+      @content;
+    }
+  }
+}
