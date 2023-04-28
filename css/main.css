@@ -326,8 +326,8 @@ body {
        -o-transform: translateY(-0.2rem);
           transform: translateY(-0.2rem);
   cursor: pointer;
-  -webkit-box-shadow: 0.2rem 0.2rem 1rem black;
-          box-shadow: 0.2rem 0.2rem 1rem black;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem rgb(83, 83, 83);
+          box-shadow: 0.2rem 0.2rem 1rem rgb(83, 83, 83);
 }
 
 .contact {
