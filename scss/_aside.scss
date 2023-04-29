@@ -42,12 +42,9 @@
 	}
 
 	&__email {
-		padding: 1rem 1rem;
-		margin: 1rem;
-
 		font-size: 1.8rem;
 		transition: 0.2s;
-
+		padding: 1rem;
 		&:hover {
 			background-color: $color-primary;
 			color: aliceblue;

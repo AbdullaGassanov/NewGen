@@ -71,12 +71,11 @@ body {
           justify-content: center;
 }
 .aside__email {
-  padding: 1rem 1rem;
-  margin: 1rem;
   font-size: 1.8rem;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+  padding: 1rem;
 }
 .aside__email:hover {
   background-color: rgb(180, 135, 221);
@@ -167,10 +166,7 @@ body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  margin: 3rem 0;
 }
 .navbar__content {
   text-align: left;
@@ -181,14 +177,14 @@ body {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  margin-bottom: 0.5rem;
+  padding: 0.2rem;
 }
 .navbar__item:hover {
   -webkit-transform: translateX(1.5rem);
        -o-transform: translateX(1.5rem);
           transform: translateX(1.5rem);
   background-color: rgb(200, 163, 233);
-  padding: 0.1rem;
+  padding: 0.2rem;
   border-radius: 2px;
   color: #fff;
 }
@@ -196,7 +192,6 @@ body {
   text-decoration: none;
   color: rgb(1, 1, 109);
   font-size: 1.5vh;
-  padding: 0 1rem;
 }
 
 .bio {
