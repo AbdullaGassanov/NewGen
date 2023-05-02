@@ -302,19 +302,32 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .portfolio__gallery-box {
   width: 100%;
   height: 100%;
   text-align: center;
+  padding: 1rem;
+  -webkit-align-self: stretch;
+          align-self: stretch;
+}
+.portfolio__gallery-box h2 {
+  padding: 1.3rem 0;
 }
 .portfolio__gallery-box img {
   width: 100%;
+  height: 90%;
   padding: 2rem;
   border-radius: 3rem;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .portfolio__gallery-box img:hover {
   -webkit-transform: translateY(-0.2rem);
